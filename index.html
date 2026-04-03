@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdoulaye Dieng — IT Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portefolio.css" />
+  </head>
+  <body>
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <!-- Noise overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#hero" class="logo">
+          <span class="logo-bracket">[</span>AD<span class="logo-bracket"
+            >]</span
+          >
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about" data-num="01">Profil</a></li>
+          <li><a href="#skills" data-num="02">Skills</a></li>
+          <li><a href="#projects" data-num="03">Projets</a></li>
+          <li><a href="#experience" data-num="04">Parcours</a></li>
+          <li><a href="#contact" data-num="05">Contact</a></li>
+        </ul>
+        <div class="nav-status">
+          <span class="status-dot"></span>
+          <span>Dispo. Sept. 2026</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="hero-inner">
+        <div class="hero-tag">
+          <span class="tag-dot"></span>
+          <span id="typewriter"></span><span class="blink">_</span>
+        </div>
+        <h1 class="hero-name">
+          <span class="hero-name-first reveal-up" style="--d: 0ms"
+            >Abdoulaye</span
+          >
+          <span class="hero-name-last reveal-up" style="--d: 150ms">Dieng</span>
+        </h1>
+        <p class="hero-sub reveal-up" style="--d: 300ms">
+          Technicien Systèmes &amp; Réseaux · BTS CIEL · Passionné cybersécurité
+        </p>
+        <div class="hero-badges reveal-up" style="--d: 450ms">
+          <span class="pill">GNU/Linux</span>
+          <span class="pill">Réseaux</span>
+          <span class="pill">Cybersécurité</span>
+          <span class="pill">Scripting</span>
+        </div>
+        <div class="hero-ctas reveal-up" style="--d: 600ms">
+          <a href="mailto:diengabdoulaye699@gmail.com" class="btn-primary">
+            <span>Me contacter</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+          <a href="#projects" class="btn-ghost">Voir mes projets</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-inner">
+        <div class="section-label">
+          <span class="section-num">01</span>
+          <span>Profil Professionnel</span>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2 class="section-title">Qui suis-je ?</h2>
+            <p>
+              Étudiant en <strong>BTS CIEL</strong> (Cybersécurité, Informatique
+              &amp; Réseaux), je suis passionné par l'administration système et
+              la sécurité des infrastructures.
+            </p>
+            <p>
+              Fort d'une expérience en support utilisateur et gestion de parc au
+              sein d'un environnement hospitalier, je maîtrise les
+              environnements <strong>Debian</strong>
+              et les outils de déploiement industriels.
+            </p>
+            <p>
+              Je recherche une
+              <strong>alternance à partir de septembre 2026</strong> pour
+              approfondir mes compétences en administration réseaux et sécurité.
+            </p>
+          </div>
+          <div class="about-terminal">
+            <div class="terminal-bar">
+              <span class="t-dot t-red"></span>
+              <span class="t-dot t-yellow"></span>
+              <span class="t-dot t-green"></span>
+              <span class="t-title">abdoulaye@portfolio ~ $</span>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+              <div class="t-line"><span class="t-prompt">$</span> whoami</div>
+              <div class="t-line t-out">abdoulaye_dieng</div>
+              <div class="t-line">
+                <span class="t-prompt">$</span> cat profile.txt
+              </div>
+              <div class="t-line t-out">Localisation : Saint-Memmie (51)</div>
+              <div class="t-line t-out">Formation : BTS CIEL – Bar-le-Duc</div>
+              <div class="t-line t-out">
+                Email :
+                <a href="mailto:diengabdoulaye699@gmail.com"
+                  >diengabdoulaye699@gmail.com</a
+                >
+              </div>
+              <div class="t-line t-out">
+                Status :
+                <span class="t-green-text">✓ Ouvert aux opportunités</span>
+              </div>
+              <div class="t-line">
+                <span class="t-prompt">$</span> <span class="t-cursor">█</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section-alt">
+      <div class="section-inner">
+        <div class="section-label">
+          <span class="section-num">02</span>
+          <span>Compétences</span>
+        </div>
+        <h2 class="section-title">Stack Technique</h2>
+        <div class="skills-grid">
+          <div class="skill-card" style="--card-delay: 0ms">
+            <div class="skill-icon">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Systèmes & Réseaux</h3>
+            <ul>
+              <li>
+                <span class="skill-dot"></span>Administration Linux (Debian)
+                &amp; Active Directory
+              </li>
+              <li>
+                <span class="skill-dot"></span>Réseaux LAN : IPv4, TCP/IP, VLAN,
+                DNS/DHCP
+              </li>
+              <li>
+                <span class="skill-dot"></span>Diagnostic : Wireshark, Ping,
+                Traceroute
+              </li>
+            </ul>
+            <div class="skill-bar-group">
+              <div class="skill-bar-item">
+                <span>Linux</span>
+                <div class="bar">
+                  <div class="bar-fill" style="--w: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Réseaux</span>
+                <div class="bar">
+                  <div class="bar-fill" style="--w: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" style="--card-delay: 100ms">
+            <div class="skill-icon">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Sécurité &amp; ITSM</h3>
+            <ul>
+              <li>
+                <span class="skill-dot"></span>Gestion d'incidents via Isilog
+                IWS
+              </li>
+              <li>
+                <span class="skill-dot"></span>Inventaire automatisé : OCS
+                Inventory
+              </li>
+              <li>
+                <span class="skill-dot"></span>Déploiement : Microsoft MCM
+                (SCCM)
+              </li>
+            </ul>
+            <div class="skill-bar-group">
+              <div class="skill-bar-item">
+                <span>ITSM</span>
+                <div class="bar">
+                  <div class="bar-fill" style="--w: 70%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Sécurité</span>
+                <div class="bar">
+                  <div class="bar-fill" style="--w: 65%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" style="--card-delay: 200ms">
+            <div class="skill-icon">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Développement</h3>
+            <ul>
+              <li><span class="skill-dot"></span>Langages : C, C++, Python</li>
+              <li>
+                <span class="skill-dot"></span>Scripts Shell (Bash) &amp;
+                Automatisation
+              </li>
+              <li>
+                <span class="skill-dot"></span>Web : HTML, CSS, PHP, MySQL
+              </li>
+            </ul>
+            <div class="skill-bar-group">
+              <div class="skill-bar-item">
+                <span>Python / Bash</span>
+                <div class="bar">
+                  <div class="bar-fill" style="--w: 78%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Web</span>
+                <div class="bar">
+                  <div class="bar-fill" style="--w: 60%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-inner">
+        <div class="section-label">
+          <span class="section-num">03</span>
+          <span>Réalisations</span>
+        </div>
+        <h2 class="section-title">Projets Techniques</h2>
+        <div class="projects-grid">
+          <div
+            class="project-card project-card--featured project-card--expanded"
+          >
+            <div class="project-meta">
+              <span class="project-tag">IoT · Infrastructure · BTS CIEL</span>
+              <span class="project-year">2025–2026</span>
+            </div>
+            <h3 class="project-name">Server Bay Monitoring</h3>
+            <p class="project-desc">
+              Système embarqué complet de surveillance de
+              <strong>4 baies informatiques</strong> : mesure temps réel de la
+              température &amp; de l'humidité via capteur
+              <strong>AHT20</strong> sur <strong>ESP32</strong>, serveur
+              intranet <strong>PHP8 / MariaDB</strong> déployé sur
+              <strong>Raspberry Pi 400</strong>, alertes e-mail automatiques et
+              visualisation graphique des données historiques (jour / semaine /
+              mois / an).
+            </p>
+
+            <div class="project-images">
+              <div class="img-wrap">
+                <img
+                  src="baie-informatique-hardwarecooking-02.jpg"
+                  alt="baie informatique"
+                  loading="lazy"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="SBC-NodeMCU-ESP32-C_01.png"
+                  alt="ESP32 avec capteur AHT20 et écran OLED SSD1306"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Architecture pills -->
+            <div class="project-arch">
+              <div class="arch-block">
+                <span class="arch-label">Embarqué</span>
+                <div class="arch-items">
+                  <span>NodeMCU ESP32</span>
+                  <span>Capteur AHT20 (I²C)</span>
+                  <span>Écran OLED SSD1306</span>
+                  <span>C / C++</span>
+                  <span>Connecteur SQL natif</span>
+                </div>
+              </div>
+              <div class="arch-arrow">→</div>
+              <div class="arch-block">
+                <span class="arch-label">Réseau local (Wi-Fi / Ethernet)</span>
+                <div class="arch-items">
+                  <span>IP fixe · dhcpcd</span>
+                  <span>UFW pare-feu</span>
+                  <span>TLS / HTTPS auto-signé</span>
+                </div>
+              </div>
+              <div class="arch-arrow">→</div>
+              <div class="arch-block">
+                <span class="arch-label">Serveur Raspberry Pi 400</span>
+                <div class="arch-items">
+                  <span>Apache2 · PHP8</span>
+                  <span>MariaDB (InnoDB)</span>
+                  <span>htaccess + bcrypt</span>
+                  <span>PDO sécurisé</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modules réalisés -->
+            <div class="project-modules">
+              <div class="module-item">
+                <span class="module-num">1/4</span>
+                <span class="module-name">Serveur Web &amp; Auth htaccess</span>
+              </div>
+              <div class="module-item">
+                <span class="module-num">2/4</span>
+                <span class="module-name"
+                  >BDD Merise · MariaDB · Pare-feu UFW</span
+                >
+              </div>
+              <div class="module-item">
+                <span class="module-num">3/4</span>
+                <span class="module-name">Objet connecté ESP32 (C++)</span>
+              </div>
+              <div class="module-item">
+                <span class="module-num">4/4</span>
+                <span class="module-name"
+                  >Site intranet PHP8 &amp; graphiques</span
+                >
+              </div>
+            </div>
+
+            <div class="project-stack">
+              <code>ESP32</code><code>C++</code><code>AHT20</code
+              ><code>Raspberry Pi</code> <code>Apache2</code><code>PHP8</code
+              ><code>MariaDB</code><code>GNU/Linux</code> <code>UFW</code
+              ><code>TLS</code><code>Merise</code>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-meta">
+              <span class="project-tag">Stage CHHM</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3 class="project-name">Optimisation Inventaire</h3>
+            <p class="project-desc">
+              Automatisation de la mise à jour de l'inventaire matériel par
+              l'interfaçage entre <strong>OCS Inventory</strong> et l'outil ITSM
+              <strong>Isilog IWS</strong>. Réduction significative du temps de
+              traitement manuel.
+            </p>
+            <div class="project-stack">
+              <code>MCM</code><code>OCS Inventory</code><code>IWS</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section-alt">
+      <div class="section-inner">
+        <div class="section-label">
+          <span class="section-num">04</span>
+          <span>Parcours</span>
+        </div>
+        <h2 class="section-title">Expériences &amp; Formation</h2>
+
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-connector">
+              <div class="tl-dot"></div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-content">
+              <span class="tl-period">Mai – Juil. 2026</span>
+              <h4>Stagiaire Technicien Systèmes &amp; Réseaux</h4>
+              <p class="tl-place">CHHM — Saint-Dizier</p>
+              <p>
+                Support utilisateurs, déploiement de postes avec Microsoft MCM
+                et maintenance de parc IP.
+              </p>
+              <div class="tl-tags">
+                <span>MCM/SCCM</span><span>Active Directory</span
+                ><span>Support N1/N2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-connector">
+              <div class="tl-dot"></div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-content">
+              <span class="tl-period">Mai – Août 2025</span>
+              <h4>Stagiaire Développeur Web</h4>
+              <p class="tl-place">Orange Mobile Sénégal</p>
+              <p>Création de pages web et configuration de serveurs Apache2.</p>
+              <div class="tl-tags">
+                <span>HTML/CSS</span><span>PHP</span><span>Apache2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item tl-item--edu">
+            <div class="tl-connector">
+              <div class="tl-dot tl-dot--edu"></div>
+            </div>
+            <div class="tl-content">
+              <span class="tl-period">Depuis Sept. 2025</span>
+              <h4>BTS Cybersécurité, Informatique &amp; Réseaux (CIEL)</h4>
+              <p class="tl-place">Bar-le-Duc</p>
+              <p>
+                Formation intensive en sécurité des infrastructures,
+                administration systèmes et réseaux.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-cta">
+          <a href="CV_ALTERNANCE.pdf" class="btn-outline">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10 9 9 9 8 9" />
+            </svg>
+            Télécharger mon CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <footer id="contact">
+      <div class="footer-glow"></div>
+      <div class="section-inner">
+        <div class="section-label">
+          <span class="section-num">05</span>
+          <span>Contact</span>
+        </div>
+        <h2 class="footer-title">Travaillons ensemble</h2>
+        <p class="footer-sub">
+          Disponible pour une alternance à partir de
+          <strong>septembre 2026</strong>.<br />
+          N'hésitez pas à me contacter pour toute opportunité.
+        </p>
+        <div class="footer-links">
+          <a href="mailto:diengabdoulaye699@gmail.com" class="footer-link">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span>diengabdoulaye699@gmail.com</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/nabdoulaye-dieng-0238b0382"
+            target="_blank"
+            class="footer-link"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            LinkedIn
+          </a>
+          <span class="footer-link footer-loc">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Saint-Memmie (51)
+          </span>
+        </div>
+        <p class="footer-copy">
+          &copy; 2026 — Abdoulaye Dieng · Portfolio Technique
+        </p>
+      </div>
+    </footer>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script>
+      // Custom cursor
+      const cursor = document.getElementById("cursor");
+      const trail = document.getElementById("cursorTrail");
+      let mx = 0,
+        my = 0,
+        tx = 0,
+        ty = 0;
+      document.addEventListener("mousemove", (e) => {
+        mx = e.clientX;
+        my = e.clientY;
+        cursor.style.left = mx + "px";
+        cursor.style.top = my + "px";
+      });
+      function animTrail() {
+        tx += (mx - tx) * 0.12;
+        ty += (my - ty) * 0.12;
+        trail.style.left = tx + "px";
+        trail.style.top = ty + "px";
+        requestAnimationFrame(animTrail);
+      }
+      animTrail();
+      document.querySelectorAll("a, button").forEach((el) => {
+        el.addEventListener("mouseenter", () =>
+          cursor.classList.add("cursor--hover"),
+        );
+        el.addEventListener("mouseleave", () =>
+          cursor.classList.remove("cursor--hover"),
+        );
+      });
+
+      // Navbar scroll
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("scrolled", window.scrollY > 60);
+      });
+
+      // Typewriter
+      const phrases = [
+        "Technicien IT & Réseaux",
+        "Passionné Linux / Debian",
+        "En recherche d'alternance",
+        "Futur ingénieur cybersécurité",
+      ];
+      let pi = 0,
+        ci = 0,
+        del = false;
+      const tw = document.getElementById("typewriter");
+      function typeLoop() {
+        const word = phrases[pi];
+        if (!del) {
+          tw.textContent = word.slice(0, ++ci);
+          if (ci === word.length) {
+            del = true;
+            setTimeout(typeLoop, 2000);
+            return;
+          }
+        } else {
+          tw.textContent = word.slice(0, --ci);
+          if (ci === 0) {
+            del = false;
+            pi = (pi + 1) % phrases.length;
+          }
+        }
+        setTimeout(typeLoop, del ? 45 : 70);
+      }
+      typeLoop();
+
+      // Scroll reveal
+      const revealEls = document.querySelectorAll(
+        ".reveal-up, .skill-card, .project-card, .tl-item, .about-terminal",
+      );
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+      revealEls.forEach((el) => io.observe(el));
+
+      // Skill bars animate on visible
+      const barFills = document.querySelectorAll(".bar-fill");
+      const barIo = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.style.width =
+                e.target.style.getPropertyValue("--w") ||
+                getComputedStyle(e.target).getPropertyValue("--w");
+              e.target.classList.add("bar-animate");
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      barFills.forEach((el) => barIo.observe(el));
+
+      // Active nav link
+      const sections = document.querySelectorAll("section[id], footer[id]");
+      const navLinks = document.querySelectorAll(".nav-links a");
+      const navIo = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              const currentId = e.target.getAttribute("id");
+              navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${currentId}`) {
+                  link.classList.add("active");
+                }
+              });
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      sections.forEach((el) => navIo.observe(el));
+    </script>
+  </body>
+</html>
